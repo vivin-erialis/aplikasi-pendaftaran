@@ -45,7 +45,7 @@
                                 <div>
                                     <h6 style="font-size: 16px">Alasan memilih bidang {{ $pendaftar->bidang->nama_bidang }}</h6>
                                     <p style="color: black; font-size: 14px; text-align: justify;">
-                                        {{ $pendaftar->alasan }}
+                                        {!! $pendaftar->alasan !!}
                                     </p>
                                 </div>
                             </div>
