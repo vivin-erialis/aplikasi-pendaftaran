@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title','Halaman Detail Data Bidang')
 @section('content')
-    <div class="container-fluid py-4 px-5">
+    <div class="container-fluid py-3 px-3">
         <div class="row">
             <div class="col-12">
                 <div class="card border shadow-xs mb-4">
@@ -21,7 +21,7 @@
                         <div>
                             <h6>Deskripsi Tugas :</h6>
                             <p style="color: black">
-                                {{$bidang->tugas}}
+                                {!!$bidang->tugas!!}
                             </p>
                         </div>
                         <div class="">

@@ -2,10 +2,10 @@
 @section('title', 'Halaman Pendaftaran')
 @section('content')
 <section>
-    <div class="p-4">
-        <div class="container px-3" style="background-color: white; border-radius:9px;">
-            <div class="card-header border-bottom mb-3pb-0 text-left bg-transparent text-center mt-5 p-4">
-                <h3 class="font-weight-black text-dark display-6">Form Pendaftaran</h3>
+    <div class="p-2">
+        <div class="container px-2" style="background-color: white; border-radius:9px;">
+            <div class="card-header border-bottom mb-3pb-0 text-left bg-transparent text-center mt-5 p-2">
+                <h3 class="font-weight-black text-dark display-6 mt-2">Form Pendaftaran</h3>
                 <p class="mb-0">Daftar sebagai anggota, isi data berikut. </p>
                 {{-- <a href="/cetakformulir" style="font-size: 13px; color:blue;">Cetak Formulir Anda</a> --}}
             </div>
@@ -89,7 +89,7 @@
                                     <label>Alasan</label>
                                     <div class="mb-3">
                                         <textarea type="email" class="form-control" placeholder="masukan alasan" aria-label="Password"
-                                            aria-describedby="password-addon" name="alasan" required></textarea>
+                                            aria-describedby="password-addon" id="content" name="alasan" required></textarea>
                                     </div>
 
                                     <div class="text-center">

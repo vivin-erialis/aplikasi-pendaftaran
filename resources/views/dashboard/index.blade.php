@@ -1,7 +1,7 @@
 @extends('dashboard.dashboard')
 @section('title','Halaman Pengumuman Hasil Seleksi')
 @section('content')
-    <div class="container-fluid py-4 px-5">
+    <div class="container-fluid py-2 px-2">
         <div class="row">
             <div class="col mt-1">
                 @if (session()->has('pesan'))

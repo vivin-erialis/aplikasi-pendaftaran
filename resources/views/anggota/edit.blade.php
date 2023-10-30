@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title','Halaman Edit Data Anggota')
 @section('content')
-    <div class="container-fluid py-4 px-5">
+    <div class="container-fluid py-3 px-3">
         <div class="row">
             <div class="col-12">
                 <div class="card border shadow-xs mb-4">

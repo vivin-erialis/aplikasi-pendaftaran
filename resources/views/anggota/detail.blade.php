@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title','Halaman Detail Data Anggota')
 @section('content')
-    <div class="container-fluid py-4 px-5">
+    <div class="container-fluid py-3 px-3">
         <div class="row">
             <div class="col-12">
                 <div class="card border shadow-xs mb-4">
@@ -43,9 +43,9 @@
                                     <h6>{{ $anggota->status }}</h6>
                                 </div>
                                 <div>
-                                    <h6 style="font-size: 16px">Alasan memilih bidang {{ $anggota->bidang->nama_bidang }}</h6>
+                                    <h6 style="font-size: 16px">Tugas sebagai anggota {{ $anggota->bidang->nama_bidang }}</h6>
                                     <p style="color: black; font-size: 14px; text-align:justify;">
-                                        {{ $anggota->bidang->tugas }}
+                                        {!! $anggota->bidang->tugas !!}
                                     </p>
                                 </div>
                             </div>

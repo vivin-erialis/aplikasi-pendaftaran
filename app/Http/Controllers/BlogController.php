@@ -106,8 +106,8 @@ class BlogController extends Controller
         //
         if($request->foto_kegiatan != null) {
             $fotoKegiatan = time(). '-' . $request->nama . '.jpg';
-            $request->foto_kegiatan->move(public_path('/images/foto kegiatan'), $fotoKegiatan);
-            $kontent = $request->input('content');
+            $request->foto_kegiatan->move(public_path('/images/dokumentasi'), $fotoKegiatan);
+            $kontent = $request->input('deskripsi_kegiatan');
             blog::find($id)->update([
                 'nama_kegiatan'=>$request->nama_kegiatan,
                 'tanggal_kegiatan'=>$request->tanggal_kegiatan,

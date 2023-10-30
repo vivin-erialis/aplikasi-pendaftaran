@@ -48,7 +48,7 @@
 
                         <div class="entry-content">
                             <p>
-                                {!!Str::words($item->deskripsi_kegiatan, 40, '...') !!}
+                                {!!Str::words($item->deskripsi_kegiatan, 30, '...') !!}
                             </p>
                             <div class="read-more">
                                 <a href="/berita/{{$item->id}}">Read More</a>

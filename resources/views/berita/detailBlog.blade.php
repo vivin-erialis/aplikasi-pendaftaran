@@ -25,7 +25,7 @@
                     <div class="col-lg-12 entries">
 
                         <article class="entry entry-single">
-                            <h2 class="entry-title text-center">
+                            <h2 class="entry-title text-center" style="">
                                 <a href="blog-single.html">{{ $blog->nama_kegiatan }}</a>
                             </h2>
 
@@ -53,6 +53,12 @@
                                         eos aliquam doloribus minus autem quos.
                                     </p>
                                 </blockquote>
+                            </div>
+                            <div class="entry-content">
+
+                                <div class="read-more">
+                                    <a href="/berita">Kembali</a>
+                                </div>
                             </div>
                         </article><!-- End blog entry -->
                     </div><!-- End blog entries list -->
