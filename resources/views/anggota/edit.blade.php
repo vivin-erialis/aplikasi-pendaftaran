@@ -82,21 +82,14 @@
                                                     <div class="text-center">
                                                         <button type="submit"
                                                             class="btn btn-dark w-100 mt-4 mb-3">Simpan</button>
-
                                                     </div>
                                                 </div>
-
                                             </div>
-
-
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

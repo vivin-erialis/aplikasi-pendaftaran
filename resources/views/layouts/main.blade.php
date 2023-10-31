@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="/css/lib/datatable/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="/css/lib/datatable/buttons.bootstrap.min.css">
     <link rel="stylesheet" href="/css/lib/datatable/buttons.dataTables.min.css">
+
+    @livewireStyles
+    @stack('styles')
     <title>@yield('title', 'Pendaftaran')</title>
 
     <!--     Fonts and icons     -->
@@ -799,5 +802,8 @@
         ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
       });
     </script>
+
+    @livewireScripts
+    @stack('scripts')
 </body>
 </html>
