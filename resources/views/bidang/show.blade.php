@@ -12,7 +12,6 @@
                                 <h5>{{ $bidang->nama_bidang }}</h5>
                             </div>
                         </div>
-
                     </div>
                     <div class="card-header">
                         {{-- <div>

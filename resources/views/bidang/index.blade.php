@@ -1,7 +1,8 @@
 @extends('layouts.main')
 @section('title', 'Halaman Data Bidang')
 @section('content')
-    <nav class="card border navbar navbar-main navbar-expand-lg mx-3 px-0 shadow-none rounded" id="navbarBlur" navbar-scroll="true">
+    <nav class="card border navbar navbar-main navbar-expand-lg mx-3 px-0 shadow-none rounded" id="navbarBlur"
+        navbar-scroll="true">
         <div class="container-fluid py-1 px-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-transparent mb-1 pb-0 pt-1 px-0 me-sm-6 me-2">
@@ -17,7 +18,8 @@
         <div class="row">
             <div class="col mt-1">
                 @if (session()->has('pesan'))
-                    <div class="alert d-flex align-items-center" style="background-color: rgb(66, 66, 111); color: white;"  role="alert">
+                    <div class="alert d-flex align-items-center" style="background-color: rgb(66, 66, 111); color: white;"
+                        role="alert">
                         {{ session('pesan') }}
                     </div>
                 @endif
@@ -57,15 +59,19 @@
                             <tbody>
                                 @foreach ($bidang as $data)
                                     <tr>
-                                         <td><p class="text-xs px-3 mb-0">{{ $data->kode_bidang }}</p></td>
-                                        <td><p class="text-xs px-3 mb-0">{{ $data->nama_bidang }}</p></td>
+                                        <td>
+                                            <p class="text-xs px-3 mb-0">{{ $data->kode_bidang }}</p>
+                                        </td>
+                                        <td>
+                                            <p class="text-xs px-3 mb-0">{{ $data->nama_bidang }}</p>
+                                        </td>
                                         {{-- <td><p class="text-xs px-3 mb-0">{{ $data->tugas }}</p></td> --}}
                                         <td>
                                             <div class="d-block my-auto mb-0">
                                                 <a href="/bidang/{{ $data->id }}/edit" class="btn btn-sm mx-1"
                                                     style="background-color:rgb(66, 66, 111); color: white;">Edit</a>
-                                                    <a href="/bidang/{{$data->id}}" class="btn btn-sm mx-1"
-                                                        style="background-color:rgb(217, 151, 60); color: white;">Detail</a>
+                                                <a href="/bidang/{{ $data->id }}" class="btn btn-sm mx-1"
+                                                    style="background-color:rgb(217, 151, 60); color: white;">Detail</a>
                                                 <form action="/bidang/{{ $data->id }}" method="post" class="d-inline">
                                                     @method('DELETE')
                                                     @csrf

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','Halaman Data Anggta')
+@section('title', 'Halaman Data Anggta')
 @section('content')
     <nav class="card border navbar navbar-main navbar-expand-lg mx-3 px-0 shadow-none rounded" id="navbarBlur"
         navbar-scroll="true">

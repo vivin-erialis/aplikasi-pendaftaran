@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','Halaman Edit Data Anggota')
+@section('title', 'Halaman Edit Data Anggota')
 @section('content')
     <div class="container-fluid py-3 px-3">
         <div class="row">
@@ -66,8 +66,7 @@
                                                     <label>Bidang</label>
                                                     <div class="mb-3">
                                                         <select class="form-control form-select"
-                                                            aria-label="Default select example" name="kode_bidang"
-                                                            required>
+                                                            aria-label="Default select example" name="kode_bidang" required>
                                                             <option>--- Pilih Bidang ---</option>
                                                             @php
                                                                 $bidang = App\Models\Bidang::get();

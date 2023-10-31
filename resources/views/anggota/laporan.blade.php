@@ -62,7 +62,7 @@
                     <img src="{{public_path('/images/foto/'.$data->foto)}}"
                     style="height:10%">
                 </td> --}}
-                <td>{{$loop->iteration}}</td>
+                <td>{{ $loop->iteration }}</td>
                 <td>
                     <p class="text-xs  mb-0">{{ $data->kode_anggota }}</p>
                 </td>
@@ -73,10 +73,14 @@
                         </div>
                     </div>
                 </td>
-                <td> <p class="text-xs">{{ Carbon\Carbon::createFromFormat('Y-m-d', $data->tanggal_lahir)->format('d-m-Y') }}</p>
+                <td>
+                    <p class="text-xs">
+                        {{ Carbon\Carbon::createFromFormat('Y-m-d', $data->tanggal_lahir)->format('d-m-Y') }}</p>
                 </td>
                 <td>
-                    <p class="text-xs  mb-0">{{ $data->email }}<p>{{$data->nohp}}</p></p>
+                    <p class="text-xs  mb-0">{{ $data->email }}
+                    <p>{{ $data->nohp }}</p>
+                    </p>
                 </td>
                 <td>
                     <p class="text-xs  mb-0">{{ $data->alamat }}</p>

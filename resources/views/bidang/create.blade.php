@@ -24,11 +24,10 @@
                             <label>Deskripsi Tugas</label>
                             <div class="mb-3">
                                 <textarea type="email" class="form-control" placeholder="masukan deskripsi tugas"
-                                    aria-describedby="email-addon" name="tugas"></textarea>
+                                    aria-describedby="email-addon" id="content" name="tugas"></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Simpan</button>
-
                             </div>
                         </form>
                     </div>

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','Halaman Detail Data Anggota')
+@section('title', 'Halaman Detail Data Anggota')
 @section('content')
     <div class="container-fluid py-3 px-3">
         <div class="row">
@@ -18,14 +18,15 @@
                         <div class="row">
                             <div class="col-md-4" style="margin-left: 18px;">
                                 <img src="/../images/foto/{{ $anggota->foto }}" alt="{{ $anggota->foto }}"
-                                 class="me-3 col-10 m-auto">
+                                    class="me-3 col-10 m-auto">
                             </div>
                             <div class="col-md-7 mx-2">
                                 <div class="border-bottom mb-2">
-                                    <h6 style="font-size: 20px">{{ $anggota->nama }} ({{$anggota->kode_anggota}})</h6>
+                                    <h6 style="font-size: 20px">{{ $anggota->nama }} ({{ $anggota->kode_anggota }})</h6>
                                 </div>
                                 <div>
-                                    <h6 style="font-size: 14px">{{\Carbon\Carbon::parse($anggota->tanggal_lahir)->format('d-m-Y') }}</h6>
+                                    <h6 style="font-size: 14px">
+                                        {{ \Carbon\Carbon::parse($anggota->tanggal_lahir)->format('d-m-Y') }}</h6>
                                 </div>
                                 <div>
                                     <h6 style="font-size: 14px">{{ $anggota->jenis_kelamin }}</h6>
@@ -43,7 +44,8 @@
                                     <h6>{{ $anggota->status }}</h6>
                                 </div>
                                 <div>
-                                    <h6 style="font-size: 16px">Tugas sebagai anggota {{ $anggota->bidang->nama_bidang }}</h6>
+                                    <h6 style="font-size: 16px">Tugas sebagai anggota {{ $anggota->bidang->nama_bidang }}
+                                    </h6>
                                     <p style="color: black; font-size: 14px; text-align:justify;">
                                         {!! $anggota->bidang->tugas !!}
                                     </p>
@@ -54,26 +56,26 @@
                             {{-- <div class="mx-3">
                                 <a href="/anggota" class="btn btn-dark w-16 mt-4 mb-3">Kembali</a>
                             </div> --}}
-                           @if ($anggota->status == 'pending')
-                            <div class="mx-2 float-end">
-                                <form action="/anggota" method="post">
-                                    @csrf
-                                    <input type="text" name="idanggotaan" id="" value="{{$anggota->id}}" hidden>
-                                    <input type="text" name="status" id="" value="Diterima" hidden>
-                                    <button type="submit" class="btn btn-success w-16 mt-4 mb-3">Terima</button>
-                                </form>
-                            </div>
-                            <div class="mx-2 float-end">
-                                <form action="/anggota" method="post">
-                                    @csrf
-                                    <input type="text" name="idanggotaan" id="" value="{{$anggota->id}}" hidden>
-                                    <input type="text" name="status" id="" value="Ditolak" hidden>
-                                    <button type="submit" class="btn btn-danger w-16 mt-4 mb-3">Tolak</button>
-                                </form>
-                            </div>
-
-
-                           @endif
+                            @if ($anggota->status == 'pending')
+                                <div class="mx-2 float-end">
+                                    <form action="/anggota" method="post">
+                                        @csrf
+                                        <input type="text" name="idanggotaan" id="" value="{{ $anggota->id }}"
+                                            hidden>
+                                        <input type="text" name="status" id="" value="Diterima" hidden>
+                                        <button type="submit" class="btn btn-success w-16 mt-4 mb-3">Terima</button>
+                                    </form>
+                                </div>
+                                <div class="mx-2 float-end">
+                                    <form action="/anggota" method="post">
+                                        @csrf
+                                        <input type="text" name="idanggotaan" id="" value="{{ $anggota->id }}"
+                                            hidden>
+                                        <input type="text" name="status" id="" value="Ditolak" hidden>
+                                        <button type="submit" class="btn btn-danger w-16 mt-4 mb-3">Tolak</button>
+                                    </form>
+                                </div>
+                            @endif
 
                         </div>
                     </div>
