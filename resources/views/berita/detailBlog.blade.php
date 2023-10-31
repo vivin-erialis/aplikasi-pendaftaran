@@ -49,8 +49,7 @@
 
                                 <blockquote>
                                     <p>
-                                        Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut
-                                        eos aliquam doloribus minus autem quos.
+                                        {{$blog->quote}}
                                     </p>
                                 </blockquote>
                             </div>

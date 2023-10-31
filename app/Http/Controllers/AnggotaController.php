@@ -15,9 +15,12 @@ class AnggotaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
+        // $kodeBbidang = $request->kode_bidang;
+        // if ()
+
         return view('anggota.index',[
             'anggota'=>anggota::with('bidang')->get(),
             'active'=>'anggota'

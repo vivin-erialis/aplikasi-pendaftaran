@@ -58,6 +58,7 @@ class BlogController extends Controller
         $blog->tanggal_kegiatan = $request->tanggal_kegiatan;
         $blog->foto_kegiatan = $foto_kegiatan;
         $blog->deskripsi_kegiatan = $kegiatan;
+        $blog->quote = $request->quote;
         // $blog->deskripsi_kegiatan = strip_tags($request['deskripsi_kegiatan']);
 
         $blog->save();
@@ -112,7 +113,8 @@ class BlogController extends Controller
                 'nama_kegiatan'=>$request->nama_kegiatan,
                 'tanggal_kegiatan'=>$request->tanggal_kegiatan,
                 'foto_kegiatan'=>$fotoKegiatan,
-                'deskripsi_kegiatan'=>$kontent
+                'deskripsi_kegiatan'=>$kontent,
+                'quote'=>$request->quote
                 // 'deskripsi_kegiatan'=>strip_tags($request['deskripsi_kegiatan'])
             ]);
         }

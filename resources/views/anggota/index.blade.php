@@ -54,7 +54,7 @@
                                     <th class="text-secondary text-xs font-weight-semibold opacity-7">Kode Anggota</th>
                                     <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">Anggota</th>
                                     {{-- <th class="text-secondary text-xs font-weight-semibold opacity-7">Tanggal Lahir</th> --}}
-                                    <th class="text-secondary text-xs font-weight-semibold opacity-7">Alamat</th>
+                                    <th class="text-secondary text-xs font-weight-semibold opacity-7">Bidang</th>
                                     <th class="text-secondary text-xs font-weight-semibold opacity-7">Aksi</th>
                                 </tr>
                             </thead>
@@ -81,7 +81,7 @@
                                         {{-- <td> <p class="text-xs">{{ Carbon\Carbon::createFromFormat('Y-m-d', $data->tanggal_lahir)->format('d-m-Y') }}</p>
                                         </td> --}}
                                         <td>
-                                            <p class="text-xs px-3 mb-0">{{ $data->alamat }}</p>
+                                            <p class="text-xs px-3 mb-0">{{ $data->bidang->nama_bidang }}</p>
                                         </td>
                                         <td>
                                             <div class="d-block my-auto mb-0">

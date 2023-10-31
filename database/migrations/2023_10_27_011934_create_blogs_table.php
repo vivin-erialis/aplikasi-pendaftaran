@@ -19,6 +19,7 @@ return new class extends Migration
             $table->date('tanggal_kegiatan');
             $table->string('foto_kegiatan');
             $table->text('deskripsi_kegiatan');
+            $table->string('quote');
             $table->timestamps();
         });
     }
