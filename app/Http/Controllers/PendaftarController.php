@@ -49,6 +49,8 @@ class PendaftarController extends Controller
             $validate['foto'] = $foto;
         }
 
+        $alasan = $request->input('alasan');
+
         $pendaftar = new pendaftar();
         $pendaftar->nama = $request->nama;
         $pendaftar->foto = $foto;
@@ -58,7 +60,7 @@ class PendaftarController extends Controller
         $pendaftar->nohp = $request->nohp;
         $pendaftar->email = $request->email;
         $pendaftar->kode_bidang = $request->kode_bidang;
-        $pendaftar->alasan = $request->alasan;
+        $pendaftar->alasan = $alasan;
 
         // dd($pendaftar);
         $pendaftar->save();

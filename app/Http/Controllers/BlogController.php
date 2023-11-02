@@ -50,7 +50,7 @@ class BlogController extends Controller
             $validate['foto_kegiatan'] = $foto_kegiatan;
         }
 
-        $kegiatan = $request->input('deskripsi_kegiatan');
+        $kegiatan = $request->deskripsi_kegiatan;
 
 
         $blog = new blog();

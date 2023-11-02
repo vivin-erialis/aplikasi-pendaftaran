@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','Halaman Tambah Data Kegiatan')
+@section('title', 'Halaman Tambah Data Kegiatan')
 
 @section('content')
     <div class="container-fluid py-3 px-3">
@@ -38,8 +38,13 @@
                                     <div class="mb-3">
                                         {{-- <textarea type="text" id="content" class="form-control" placeholder="masukan deskripsi kegiatan" aria-label="Name"
                                             aria-describedby="name-addon" style="height: 60px" name="deskripsi_kegiatan" required></textarea> --}}
-                                            <textarea type="text" id="content" placeholder="masukan deskripsi kegiatan" aria-label="Name" aria-describedby="name-addon" name="deskripsi_kegiatan"></textarea>
+                                        <textarea type="text" id="content" placeholder="masukan deskripsi kegiatan" aria-label="Name"
+                                            aria-describedby="name-addon" name="deskripsi_kegiatan"></textarea>
 
+                                    </div>
+                                    <label for="">Quote</label>
+                                    <div class="mb-3">
+                                        <textarea name="quote" class="form-control"></textarea>
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class="btn btn-dark w-100 mt-4 mb-3">Simpan</button>

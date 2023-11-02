@@ -89,7 +89,7 @@
                                     <label>Alasan</label>
                                     <div class="mb-3">
                                         <textarea type="email" class="form-control" placeholder="masukan alasan" aria-label="Password"
-                                            aria-describedby="password-addon" id="content" name="alasan" required></textarea>
+                                            aria-describedby="password-addon" id="content" name="alasan"></textarea>
                                     </div>
 
                                     <div class="text-center">
