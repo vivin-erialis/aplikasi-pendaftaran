@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="/css/lib/datatable/buttons.bootstrap.min.css">
     <link rel="stylesheet" href="/css/lib/datatable/buttons.dataTables.min.css">
 
+    {{-- Fontawesome --}}
+    <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.css">
+
     @livewireStyles
     @stack('styles')
     <title>@yield('title', 'Pendaftaran')</title>
